@@ -43,7 +43,7 @@ Produces a secure MAC value
 new_mac = hmac.new(secret_key, received_message, hashlib.sha256).hexdigest()
 Receiver uses the same secret key
 Generates MAC again from received message
-4. ✔️ Verification
+4.  Verification
 if hmac.compare_digest(received_mac, new_mac):
 Compares original MAC with newly generated MAC
 Uses secure comparison to avoid timing attacks
@@ -112,6 +112,6 @@ if hmac.compare_digest(received_mac, new_mac):
     print(" Message is authentic and not modified")
 else:
     print(" Message has been tampered")
+<img width="816" height="358" alt="Screenshot 2026-04-09 002839" src="https://github.com/user-attachments/assets/49a8bc89-425d-42c1-a030-903a8e08ceda" />
 
-    <img width="816" height="358" alt="Screenshot 2026-04-09 002839" src="https://github.com/user-attachments/assets/e3cd6984-1e14-4fc7-bc7d-97e51f1ed8ca" />
 
