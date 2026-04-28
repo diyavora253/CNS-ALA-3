@@ -84,6 +84,8 @@ It ensures:
  Message integrity
  Sender authenticity
 Widely used in real-world secure systems
+
+CODE:
 import hmac
 import hashlib
 
